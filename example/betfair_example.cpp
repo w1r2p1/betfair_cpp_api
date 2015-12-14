@@ -31,7 +31,7 @@ int main()
 
    if (betfair_app_key.empty() || betfair_username.empty() || betfair_password.empty())
    {
-      ucout << "APP_KEY, BF_USERNAME and BF_PASSWORD enviroment vars need to be set\n";
+      ucout << "APP_KEY, BF_USERNAME and BF_PASSWORD environment vars need to be set\n";
       return 1;
    }
 
@@ -43,13 +43,23 @@ int main()
 
    ucout << evtReq.to_json().serialize() << endl;
 
-   BetfairAPI x(betfair_app_key);
+   BetfairAPI api(betfair_app_key);
 
    try
    {
 
-      auto login = x.login(betfair_username, betfair_password);
+      api.login(betfair_username, betfair_password);
 
+      auto eventsTasks = api.list_event_types(ListEventTypesRequest(MarketFilter()));
+
+      //events is a PPL task so get the result
+      auto events = eventsTasks.get();
+
+      for (const auto& evt : events)
+      {
+         // dump the content to stdout
+         ucout << evt << endl;
+      }
    }
    catch (web::http::http_exception& exp)
    {
@@ -71,7 +81,7 @@ int main()
 
       made_request = chrono::system_clock::now();
       
-      tasks.push_back(x.get_account_details());
+      tasks.push_back(api.get_account_details());
 
       auto zz = tasks[0].get();
 

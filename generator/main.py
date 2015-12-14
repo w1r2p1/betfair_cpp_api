@@ -120,11 +120,11 @@ inline std::basic_ostream<Char, Traits> & operator<<(std::basic_ostream<Char, Tr
 {
 {%for parameter in type.parameters%}
 {% if parameter.mandatory or 'std::' in parameter.cpp_type%}
-    os << "{{parameter.name}}:" << std::endl << bfdata.{{parameter.name}} << std::endl;
+    os << "{{parameter.name}}:" << std::endl << bfdata.{{parameter.api_name}} << std::endl;
 {%else%}
-    if (bfdata.{{parameter.name}} != boost::none)
+    if (bfdata.{{parameter.api_name}} != boost::none)
     {
-       os << "{{parameter.name}}:" << std::endl << bfdata.{{parameter.name}}.get()  << std::endl;
+       os << "{{parameter.api_name}}:" << std::endl << bfdata.{{parameter.api_name}}.get()  << std::endl;
     }
 {%endif%}
 {%endfor%}

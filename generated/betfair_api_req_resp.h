@@ -1,7 +1,7 @@
 
 //********************************************************************
 // Auto generated types do not edit
-// Data time generated 2015-12-14 13:07:48.533388
+// Data time generated 2015-12-14 15:58:18.601103
 //********************************************************************
 #pragma once
 #include "../include/betfair_types_helper.h" 
@@ -57,7 +57,7 @@ private:
 template <typename Char, typename Traits>
 inline std::basic_ostream<Char, Traits> & operator<<(std::basic_ostream<Char, Traits>& os, const CreateDeveloperAppKeysRequest& bfdata)
 {
-    os << "appName:" << std::endl << bfdata.appName << std::endl;
+    os << "appName:" << std::endl << bfdata.app_name << std::endl;
     return os;
 }
 
@@ -245,8 +245,8 @@ private:
 template <typename Char, typename Traits>
 inline std::basic_ostream<Char, Traits> & operator<<(std::basic_ostream<Char, Traits>& os, const GetApplicationSubscriptionTokenRequest& bfdata)
 {
-    os << "subscriptionLength:" << std::endl << bfdata.subscriptionLength << std::endl;
-    os << "clientReference:" << std::endl << bfdata.clientReference << std::endl;
+    os << "subscriptionLength:" << std::endl << bfdata.subscription_length << std::endl;
+    os << "clientReference:" << std::endl << bfdata.client_reference << std::endl;
     return os;
 }
 
@@ -296,7 +296,7 @@ private:
 template <typename Char, typename Traits>
 inline std::basic_ostream<Char, Traits> & operator<<(std::basic_ostream<Char, Traits>& os, const ActivateApplicationSubscriptionRequest& bfdata)
 {
-    os << "subscriptionToken:" << std::endl << bfdata.subscriptionToken << std::endl;
+    os << "subscriptionToken:" << std::endl << bfdata.subscription_token << std::endl;
     return os;
 }
 
@@ -346,7 +346,7 @@ private:
 template <typename Char, typename Traits>
 inline std::basic_ostream<Char, Traits> & operator<<(std::basic_ostream<Char, Traits>& os, const CancelApplicationSubscriptionRequest& bfdata)
 {
-    os << "subscriptionToken:" << std::endl << bfdata.subscriptionToken << std::endl;
+    os << "subscriptionToken:" << std::endl << bfdata.subscription_token << std::endl;
     return os;
 }
 
@@ -408,8 +408,8 @@ private:
 template <typename Char, typename Traits>
 inline std::basic_ostream<Char, Traits> & operator<<(std::basic_ostream<Char, Traits>& os, const UpdateApplicationSubscriptionRequest& bfdata)
 {
-    os << "vendorClientId:" << std::endl << bfdata.vendorClientId << std::endl;
-    os << "subscriptionLength:" << std::endl << bfdata.subscriptionLength << std::endl;
+    os << "vendorClientId:" << std::endl << bfdata.vendor_client_id << std::endl;
+    os << "subscriptionLength:" << std::endl << bfdata.subscription_length << std::endl;
     return os;
 }
 
@@ -459,7 +459,7 @@ private:
 template <typename Char, typename Traits>
 inline std::basic_ostream<Char, Traits> & operator<<(std::basic_ostream<Char, Traits>& os, const ListApplicationSubscriptionTokensRequest& bfdata)
 {
-    os << "subscriptionStatus:" << std::endl << bfdata.subscriptionStatus << std::endl;
+    os << "subscriptionStatus:" << std::endl << bfdata.subscription_status << std::endl;
     return os;
 }
 
@@ -524,8 +524,8 @@ private:
 template <typename Char, typename Traits>
 inline std::basic_ostream<Char, Traits> & operator<<(std::basic_ostream<Char, Traits>& os, const GetApplicationSubscriptionHistoryRequest& bfdata)
 {
-    os << "vendorClientId:" << std::endl << bfdata.vendorClientId << std::endl;
-    os << "applicationKey:" << std::endl << bfdata.applicationKey << std::endl;
+    os << "vendorClientId:" << std::endl << bfdata.vendor_client_id << std::endl;
+    os << "applicationKey:" << std::endl << bfdata.application_key << std::endl;
     return os;
 }
 
@@ -636,10 +636,10 @@ template <typename Char, typename Traits>
 inline std::basic_ostream<Char, Traits> & operator<<(std::basic_ostream<Char, Traits>& os, const GetAccountStatementRequest& bfdata)
 {
     os << "locale:" << std::endl << bfdata.locale << std::endl;
-    os << "fromRecord:" << std::endl << bfdata.fromRecord << std::endl;
-    os << "recordCount:" << std::endl << bfdata.recordCount << std::endl;
-    os << "itemDateRange:" << std::endl << bfdata.itemDateRange << std::endl;
-    os << "includeItem:" << std::endl << bfdata.includeItem << std::endl;
+    os << "fromRecord:" << std::endl << bfdata.from_record << std::endl;
+    os << "recordCount:" << std::endl << bfdata.record_count << std::endl;
+    os << "itemDateRange:" << std::endl << bfdata.item_date_range << std::endl;
+    os << "includeItem:" << std::endl << bfdata.include_item << std::endl;
     os << "wallet:" << std::endl << bfdata.wallet << std::endl;
     return os;
 }
@@ -690,7 +690,7 @@ private:
 template <typename Char, typename Traits>
 inline std::basic_ostream<Char, Traits> & operator<<(std::basic_ostream<Char, Traits>& os, const ListCurrencyRatesRequest& bfdata)
 {
-    os << "fromCurrency:" << std::endl << bfdata.fromCurrency << std::endl;
+    os << "fromCurrency:" << std::endl << bfdata.from_currency << std::endl;
     return os;
 }
 
@@ -754,7 +754,7 @@ private:
 template <typename Char, typename Traits>
 inline std::basic_ostream<Char, Traits> & operator<<(std::basic_ostream<Char, Traits>& os, const HeartbeatRequest& bfdata)
 {
-    os << "preferredTimeoutSeconds:" << std::endl << bfdata.preferredTimeoutSeconds << std::endl;
+    os << "preferredTimeoutSeconds:" << std::endl << bfdata.preferred_timeout_seconds << std::endl;
     return os;
 }
 
@@ -1343,12 +1343,12 @@ template <typename Char, typename Traits>
 inline std::basic_ostream<Char, Traits> & operator<<(std::basic_ostream<Char, Traits>& os, const ListMarketCatalogueRequest& bfdata)
 {
     os << "filter:" << std::endl << bfdata.filter << std::endl;
-    os << "marketProjection:" << std::endl << bfdata.marketProjection << std::endl;
+    os << "marketProjection:" << std::endl << bfdata.market_projection << std::endl;
     if (bfdata.sort != boost::none)
     {
        os << "sort:" << std::endl << bfdata.sort.get()  << std::endl;
     }
-    os << "maxResults:" << std::endl << bfdata.maxResults << std::endl;
+    os << "maxResults:" << std::endl << bfdata.max_results << std::endl;
     if (bfdata.locale != boost::none)
     {
        os << "locale:" << std::endl << bfdata.locale.get()  << std::endl;
@@ -1474,22 +1474,22 @@ private:
 template <typename Char, typename Traits>
 inline std::basic_ostream<Char, Traits> & operator<<(std::basic_ostream<Char, Traits>& os, const ListMarketBookRequest& bfdata)
 {
-    os << "marketIds:" << std::endl << bfdata.marketIds << std::endl;
-    if (bfdata.priceProjection != boost::none)
+    os << "marketIds:" << std::endl << bfdata.market_ids << std::endl;
+    if (bfdata.price_projection != boost::none)
     {
-       os << "priceProjection:" << std::endl << bfdata.priceProjection.get()  << std::endl;
+       os << "price_projection:" << std::endl << bfdata.price_projection.get()  << std::endl;
     }
-    if (bfdata.orderProjection != boost::none)
+    if (bfdata.order_projection != boost::none)
     {
-       os << "orderProjection:" << std::endl << bfdata.orderProjection.get()  << std::endl;
+       os << "order_projection:" << std::endl << bfdata.order_projection.get()  << std::endl;
     }
-    if (bfdata.matchProjection != boost::none)
+    if (bfdata.match_projection != boost::none)
     {
-       os << "matchProjection:" << std::endl << bfdata.matchProjection.get()  << std::endl;
+       os << "match_projection:" << std::endl << bfdata.match_projection.get()  << std::endl;
     }
-    if (bfdata.currencyCode != boost::none)
+    if (bfdata.currency_code != boost::none)
     {
-       os << "currencyCode:" << std::endl << bfdata.currencyCode.get()  << std::endl;
+       os << "currency_code:" << std::endl << bfdata.currency_code.get()  << std::endl;
     }
     if (bfdata.locale != boost::none)
     {
@@ -1662,35 +1662,35 @@ private:
 template <typename Char, typename Traits>
 inline std::basic_ostream<Char, Traits> & operator<<(std::basic_ostream<Char, Traits>& os, const ListCurrentOrdersRequest& bfdata)
 {
-    os << "betIds:" << std::endl << bfdata.betIds << std::endl;
-    os << "marketIds:" << std::endl << bfdata.marketIds << std::endl;
-    if (bfdata.orderProjection != boost::none)
+    os << "betIds:" << std::endl << bfdata.bet_ids << std::endl;
+    os << "marketIds:" << std::endl << bfdata.market_ids << std::endl;
+    if (bfdata.order_projection != boost::none)
     {
-       os << "orderProjection:" << std::endl << bfdata.orderProjection.get()  << std::endl;
+       os << "order_projection:" << std::endl << bfdata.order_projection.get()  << std::endl;
     }
-    if (bfdata.placedDateRange != boost::none)
+    if (bfdata.placed_date_range != boost::none)
     {
-       os << "placedDateRange:" << std::endl << bfdata.placedDateRange.get()  << std::endl;
+       os << "placed_date_range:" << std::endl << bfdata.placed_date_range.get()  << std::endl;
     }
-    if (bfdata.dateRange != boost::none)
+    if (bfdata.date_range != boost::none)
     {
-       os << "dateRange:" << std::endl << bfdata.dateRange.get()  << std::endl;
+       os << "date_range:" << std::endl << bfdata.date_range.get()  << std::endl;
     }
-    if (bfdata.orderBy != boost::none)
+    if (bfdata.order_by != boost::none)
     {
-       os << "orderBy:" << std::endl << bfdata.orderBy.get()  << std::endl;
+       os << "order_by:" << std::endl << bfdata.order_by.get()  << std::endl;
     }
-    if (bfdata.sortDir != boost::none)
+    if (bfdata.sort_dir != boost::none)
     {
-       os << "sortDir:" << std::endl << bfdata.sortDir.get()  << std::endl;
+       os << "sort_dir:" << std::endl << bfdata.sort_dir.get()  << std::endl;
     }
-    if (bfdata.fromRecord != boost::none)
+    if (bfdata.from_record != boost::none)
     {
-       os << "fromRecord:" << std::endl << bfdata.fromRecord.get()  << std::endl;
+       os << "from_record:" << std::endl << bfdata.from_record.get()  << std::endl;
     }
-    if (bfdata.recordCount != boost::none)
+    if (bfdata.record_count != boost::none)
     {
-       os << "recordCount:" << std::endl << bfdata.recordCount.get()  << std::endl;
+       os << "record_count:" << std::endl << bfdata.record_count.get()  << std::endl;
     }
     return os;
 }
@@ -1909,39 +1909,39 @@ private:
 template <typename Char, typename Traits>
 inline std::basic_ostream<Char, Traits> & operator<<(std::basic_ostream<Char, Traits>& os, const ListClearedOrdersRequest& bfdata)
 {
-    os << "betStatus:" << std::endl << bfdata.betStatus << std::endl;
-    os << "eventTypeIds:" << std::endl << bfdata.eventTypeIds << std::endl;
-    os << "eventIds:" << std::endl << bfdata.eventIds << std::endl;
-    os << "marketIds:" << std::endl << bfdata.marketIds << std::endl;
-    os << "runnerIds:" << std::endl << bfdata.runnerIds << std::endl;
-    os << "betIds:" << std::endl << bfdata.betIds << std::endl;
+    os << "betStatus:" << std::endl << bfdata.bet_status << std::endl;
+    os << "eventTypeIds:" << std::endl << bfdata.event_type_ids << std::endl;
+    os << "eventIds:" << std::endl << bfdata.event_ids << std::endl;
+    os << "marketIds:" << std::endl << bfdata.market_ids << std::endl;
+    os << "runnerIds:" << std::endl << bfdata.runner_ids << std::endl;
+    os << "betIds:" << std::endl << bfdata.bet_ids << std::endl;
     if (bfdata.side != boost::none)
     {
        os << "side:" << std::endl << bfdata.side.get()  << std::endl;
     }
-    if (bfdata.settledDateRange != boost::none)
+    if (bfdata.settled_date_range != boost::none)
     {
-       os << "settledDateRange:" << std::endl << bfdata.settledDateRange.get()  << std::endl;
+       os << "settled_date_range:" << std::endl << bfdata.settled_date_range.get()  << std::endl;
     }
-    if (bfdata.groupBy != boost::none)
+    if (bfdata.group_by != boost::none)
     {
-       os << "groupBy:" << std::endl << bfdata.groupBy.get()  << std::endl;
+       os << "group_by:" << std::endl << bfdata.group_by.get()  << std::endl;
     }
-    if (bfdata.includeItemDescription != boost::none)
+    if (bfdata.include_item_description != boost::none)
     {
-       os << "includeItemDescription:" << std::endl << bfdata.includeItemDescription.get()  << std::endl;
+       os << "include_item_description:" << std::endl << bfdata.include_item_description.get()  << std::endl;
     }
     if (bfdata.locale != boost::none)
     {
        os << "locale:" << std::endl << bfdata.locale.get()  << std::endl;
     }
-    if (bfdata.fromRecord != boost::none)
+    if (bfdata.from_record != boost::none)
     {
-       os << "fromRecord:" << std::endl << bfdata.fromRecord.get()  << std::endl;
+       os << "from_record:" << std::endl << bfdata.from_record.get()  << std::endl;
     }
-    if (bfdata.recordCount != boost::none)
+    if (bfdata.record_count != boost::none)
     {
-       os << "recordCount:" << std::endl << bfdata.recordCount.get()  << std::endl;
+       os << "record_count:" << std::endl << bfdata.record_count.get()  << std::endl;
     }
     return os;
 }
@@ -2020,11 +2020,11 @@ private:
 template <typename Char, typename Traits>
 inline std::basic_ostream<Char, Traits> & operator<<(std::basic_ostream<Char, Traits>& os, const PlaceOrdersRequest& bfdata)
 {
-    os << "marketId:" << std::endl << bfdata.marketId << std::endl;
+    os << "marketId:" << std::endl << bfdata.market_id << std::endl;
     os << "instructions:" << std::endl << bfdata.instructions << std::endl;
-    if (bfdata.customerRef != boost::none)
+    if (bfdata.customer_ref != boost::none)
     {
-       os << "customerRef:" << std::endl << bfdata.customerRef.get()  << std::endl;
+       os << "customer_ref:" << std::endl << bfdata.customer_ref.get()  << std::endl;
     }
     return os;
 }
@@ -2107,14 +2107,14 @@ private:
 template <typename Char, typename Traits>
 inline std::basic_ostream<Char, Traits> & operator<<(std::basic_ostream<Char, Traits>& os, const CancelOrdersRequest& bfdata)
 {
-    if (bfdata.marketId != boost::none)
+    if (bfdata.market_id != boost::none)
     {
-       os << "marketId:" << std::endl << bfdata.marketId.get()  << std::endl;
+       os << "market_id:" << std::endl << bfdata.market_id.get()  << std::endl;
     }
     os << "instructions:" << std::endl << bfdata.instructions << std::endl;
-    if (bfdata.customerRef != boost::none)
+    if (bfdata.customer_ref != boost::none)
     {
-       os << "customerRef:" << std::endl << bfdata.customerRef.get()  << std::endl;
+       os << "customer_ref:" << std::endl << bfdata.customer_ref.get()  << std::endl;
     }
     return os;
 }
@@ -2195,11 +2195,11 @@ private:
 template <typename Char, typename Traits>
 inline std::basic_ostream<Char, Traits> & operator<<(std::basic_ostream<Char, Traits>& os, const ReplaceOrdersRequest& bfdata)
 {
-    os << "marketId:" << std::endl << bfdata.marketId << std::endl;
+    os << "marketId:" << std::endl << bfdata.market_id << std::endl;
     os << "instructions:" << std::endl << bfdata.instructions << std::endl;
-    if (bfdata.customerRef != boost::none)
+    if (bfdata.customer_ref != boost::none)
     {
-       os << "customerRef:" << std::endl << bfdata.customerRef.get()  << std::endl;
+       os << "customer_ref:" << std::endl << bfdata.customer_ref.get()  << std::endl;
     }
     return os;
 }
@@ -2276,11 +2276,11 @@ private:
 template <typename Char, typename Traits>
 inline std::basic_ostream<Char, Traits> & operator<<(std::basic_ostream<Char, Traits>& os, const UpdateOrdersRequest& bfdata)
 {
-    os << "marketId:" << std::endl << bfdata.marketId << std::endl;
+    os << "marketId:" << std::endl << bfdata.market_id << std::endl;
     os << "instructions:" << std::endl << bfdata.instructions << std::endl;
-    if (bfdata.customerRef != boost::none)
+    if (bfdata.customer_ref != boost::none)
     {
-       os << "customerRef:" << std::endl << bfdata.customerRef.get()  << std::endl;
+       os << "customer_ref:" << std::endl << bfdata.customer_ref.get()  << std::endl;
     }
     return os;
 }
@@ -2369,10 +2369,10 @@ private:
 template <typename Char, typename Traits>
 inline std::basic_ostream<Char, Traits> & operator<<(std::basic_ostream<Char, Traits>& os, const ListMarketProfitAndLossRequest& bfdata)
 {
-    os << "marketIds:" << std::endl << bfdata.marketIds << std::endl;
-    os << "includeSettledBets:" << std::endl << bfdata.includeSettledBets << std::endl;
-    os << "includeBspBets:" << std::endl << bfdata.includeBspBets << std::endl;
-    os << "netOfCommission:" << std::endl << bfdata.netOfCommission << std::endl;
+    os << "marketIds:" << std::endl << bfdata.market_ids << std::endl;
+    os << "includeSettledBets:" << std::endl << bfdata.include_settled_bets << std::endl;
+    os << "includeBspBets:" << std::endl << bfdata.include_bsp_bets << std::endl;
+    os << "netOfCommission:" << std::endl << bfdata.net_of_commission << std::endl;
     return os;
 }
 

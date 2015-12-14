@@ -1,7 +1,7 @@
 
 //*********************************************************
 // Auto generated interface operations classs do not edit
-// Data time generated 2015-12-14 13:07:48.525571
+// Data time generated 2015-12-14 15:58:18.570816
 //*********************************************************
 #pragma once
 #include "../include/betfair_api_base.h"
