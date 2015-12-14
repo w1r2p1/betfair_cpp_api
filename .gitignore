@@ -1,0 +1,4 @@
+*.bat
+betfair_cpp_api/packages/
+VC.*
+*.VC.*
