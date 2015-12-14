@@ -4,7 +4,7 @@
 
 ## Intention
 
-The intention is to write a cross platform, asynchronous, strongly typed C++ interface to the Betfair NG API.
+The intention is to write a cross platform, asynchronous, strongly typed C++ interface to the Betfair API-NG.
 With the interface generated from the [interface definition docs published by Betfair](https://api.developer.betfair.com/services/webapps/docs/display/1smk3cen4v3lu3yomq5qye0ni/Interface+Definition+Documents)
 
 ## Dependencies
