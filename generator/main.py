@@ -162,7 +162,7 @@ public:
 
 operation_dec_template = """
 //*********************************************************
-// Auto generated interface operations classs do not edit
+// Auto generated interface operations classes do not edit
 // Data time generated {{timestamp}}
 //*********************************************************
 #pragma once
@@ -584,7 +584,7 @@ def main():
         simple_types_list.extend(get_simple_types(interface_def, fileName.name))
 
     # extract simple types
-    # create simple types from tempate
+    # create simple types from template
     simple_template = jinja2.Template(simple_type_template, trim_blocks=True)
 
     simpleTypes = simple_template.render(types=simple_types_list)
@@ -595,7 +595,7 @@ def main():
 
     for file in files_to_read:
         # # extract  types
-        # # create types from tempate
+        # # create types from template
         fileName = Path(file)
         interface_def = read_xml_file(str(fileName))
         types.extend(get_types(interface_def, simple_types_list, fileName.name))
@@ -608,7 +608,7 @@ def main():
 
     
     # extract exceptions
-    #     create exceptions from tempate
+    #     create exceptions from template
     #
     # extract operations
     #     create operations from template

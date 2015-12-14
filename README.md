@@ -5,7 +5,7 @@
 ## Intention
 
 The intention is to write a cross platform, asynchronous, strongly typed C++ interface to the Betfair NG API.
-With the interface generated from the [interface definition docs published by betfair](https://api.developer.betfair.com/services/webapps/docs/display/1smk3cen4v3lu3yomq5qye0ni/Interface+Definition+Documents)
+With the interface generated from the [interface definition docs published by Betfair](https://api.developer.betfair.com/services/webapps/docs/display/1smk3cen4v3lu3yomq5qye0ni/Interface+Definition+Documents)
 
 ## Dependencies
 
@@ -28,7 +28,11 @@ This is a work in progress. Currently "working" in Visual Studio 2015 Update 1.
 The API should directly follow the [Betfair API](https://api.developer.betfair.com/services/webapps/docs/display/1smk3cen4v3lu3yomq5qye0ni/Reference+Guide)
 
 ```CPP
+#include <iostream>
 #include "betfair_api.h"
+
+using namespace std;
+using namespace betfair_api
 
 int main()
 {
