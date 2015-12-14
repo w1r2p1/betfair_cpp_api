@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <cstdlib>
 #include <chrono>
@@ -60,51 +59,6 @@ int main()
    {
       ucout << "exception" << endl;
    }
-   //wcout << login << endl;
-   
-   //auto out = x.Logout();
-
-   //wcout << out << endl;
-
-   //wstring bodytext = L"{\"filter\":{}}";
-
-
-   //value filter = value::object();
-
-   //auto zzzz = x.listeventTypes(filter).get();
-   //wcout << zzzz.serialize() << endl;
-   //zzzz = x.listeventTypes_block(filter);
-
-//   auto zzzz = x.listeventTypes_block(evtReq);
-   //wcout << zzzz.serialize() << endl;
-
-   //try
-   //{
-   //   auto vresp = x.GetAccountDetails().get();
-   //}
-   //catch(const BetfairException& e)
-   //{ 
-   //   cout << e.what() << endl;
-   //}
-
-//   ListEventsRequest evtsReq(fil);
-
-   //ListEventTypesRequest evtTypeReq(fil);
-
-   //auto int_events = x.ListEventTypes(evtTypeReq).get();
-
-   //
-
-   //start = std::chrono::system_clock::now();
-
-   //auto zaaaa = x.ListEvents(evtsReq).get();
-
-   //end = std::chrono::system_clock::now();
-   //chrono::duration<double> elapsed_seconds = end - start;
-   //cout << elapsed_seconds.count() << "Seconds" << endl;
-
-   //MarketFilter market_cat_fil;
-
    try
    {
      
@@ -137,22 +91,6 @@ int main()
    {
       ucout << "exception" << endl;
    }
-
-//   for (const auto& item : zaaaa)
-//   {
-//      wcout << item << endl;
-//   }
-//
-   //ListCompetitionsRequest compReq(fil);
-
-   //auto bbbb = x.ListCompetitions(compReq).get();
-   //
-
-   
-
-   //auto cccc = x.ListTimeRanges(timeReq).get();
-
-   
 
    return 0;
 }
